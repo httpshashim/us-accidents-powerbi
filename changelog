@@ -1,0 +1,52 @@
+# 📌 Changelog
+
+All notable changes to this project will be documented in this file.
+
+---
+
+## [1.0.0] - 2025-07-18
+### Added
+- Initial Power BI Dashboard built using the US Accidents dataset from Kaggle
+- Dashboard visuals for:
+  - Accidents by Hour
+  - Accidents by Day of the Week
+  - Weather Conditions causing Accidents
+  - Road Conditions during Accidents
+  - Severity Distribution
+  - Map View of Accident Locations using Latitude and Longitude
+- Slicers for filtering by Severity, Weather Condition, and Time
+- PBIX file uploaded to Google Drive due to size constraints (2.6 GB)
+- GitHub repo created for hosting changelog, README, and resources
+
+### Data Cleaning & Transformation
+- Removed null values and duplicates using Power Query
+- Converted `Start_Time` and `End_Time` to datetime formats
+- Extracted hour and day components for time-based analysis
+- Handled missing weather condition fields
+- Merged and renamed columns for readability
+
+---
+
+## [1.1.0] - Planned (Upcoming)
+### Planned Features
+- Add heatmap visual of accident concentration by state/region
+- Integrate severity-based filtering into all visuals
+- Add new pages: Vehicle Involvement, Distance Covered, Temperature Analysis
+- Add bookmarks and drillthrough filters for enhanced interactivity
+
+---
+
+## [1.0.1] - Bug Fixes & UI Adjustments
+### Fixed
+- Map visual not displaying due to Power BI security settings
+  - Enabled: File > Options > Security > "Use Map and Filled Map visuals"
+- Adjusted field names for clarity (e.g., `Start_Lat` → `Latitude`)
+- Optimized slicers to prevent overlapping and enhance dashboard readability
+
+---
+
+## Notes
+- Data Source: [Kaggle – US Accidents (Sobhan Moosavi)](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents)
+- Dashboard developed as part of internship project at Ednue Technologies
+- Project shared on GitHub with external link to PBIX file via Google Drive
+
